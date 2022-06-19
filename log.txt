@@ -1,2 +1,10 @@
 [{'contact_id': 7, 'surname': 'Федоров', 'name': 'Кирилл', 'phone': '+79617205962', 'comment': 'Студент GB'}]; added; 2022-06-19 19:02:25 
 {'contact_id': '', 'surname': 'Фёдоров', 'name': 'Кырылл', 'phone': '89617205962', 'comment': 'гикбрэйнс'}; changed; 2022-06-19 19:11:02 
+[{'contact_id': 8, 'surname': 'Блежински', 'name': 'Клифф', 'phone': ' Если бы я знал', 'comment': ' Гирьки'}]; added; 2022-06-19 20:38:50 
+{'contact_id': 8, 'surname': 'Блежински', 'name': 'Клифф', 'phone': ' Если бы я знал', 'comment': 'Gears'}; changed; 2022-06-19 21:07:19 
+{'contact_id': 8, 'surname': 'Блежински', 'name': 'Клифф', 'phone': ' Если бы я знал', 'comment': 'Я что-то нажал и всё сломалось'}; deleted; 2022-06-19 21:08:20 
+{'contact_id': 4, 'surname': 'Ромашкина', 'name': 'Маша', 'phone': '3445666', 'comment': 'Вкусные пирожки'}; changed; 2022-06-19 21:25:19 
+{'contact_id': 4, 'surname': 'Ромашкина', 'name': 'Маша', 'phone': '444', 'comment': 'Вкусные пирожки'}; changed; 2022-06-19 21:25:50 
+{'contact_id': 4, 'surname': 'Ромашкина', 'name': 'Маша', 'phone': '444', 'comment': 'Вкусные пирожки'}; changed; 2022-06-19 21:26:22 
+{'contact_id': 4, 'surname': 'Ромашкина', 'name': 'Маша', 'phone': '4444', 'comment': 'Вкусные пирожки'}; changed; 2022-06-19 21:27:03 
+{'contact_id': 4, 'surname': 'Ромашкина', 'name': 'Маша', 'phone': '444446', 'comment': 'Вкусные пирожки'}; changed; 2022-06-19 21:32:47 

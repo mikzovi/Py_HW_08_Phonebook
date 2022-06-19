@@ -1,18 +1,18 @@
 import time
 from import_from_file import choice_format
-import art  # библиотека для работы с ascii артом
-from art import *
+import art
+from art import *  # библиотека для работы с ascii артом
 
 
 def error_input():
-    print('\033[5;31mОшибка!\033[0m')
-    print('\033[21mПожалуйста введите число, соответствующее пункту меню.\033[0m')
+    print('\033[5;31mОшибка!' + art("error"))
+    print('\033[0m\033[21mПожалуйста введите число, соответствующее пункту меню.\033[0m')
     time.sleep(1)
 
 
 def done_message():
-    print('Выполнено!' + art("cat2"))
-done_message()
+    print('\033[5;32mВыполнено!' + art("cat2"))
+
 
 main_menu = \
     'Выберите пункт меню:\n\
@@ -28,7 +28,7 @@ main_menu = \
 def start_page():  # Starting page, choose number
     print('\033[5;35m╔' + 52 * "═" + '╗')
     print('\033[5;32m')
-    print(art.text2art(" ContactList", font='cybermedum'))
+    print(text2art(" ContactList", font='cybermedum'))
     print('\033[5;35m╚' + 52 * "═" + '╝\033[0m')
     print(main_menu)
     print(50 * "═")
@@ -36,9 +36,6 @@ def start_page():  # Starting page, choose number
     command = input('\033[1mВыберите действие: \033[0m')
     print(50 * "_")
     return command
-
-
-# start_page()
 
 
 def show_contacts(data):  # 1 in menu
@@ -122,10 +119,6 @@ def change_contact_content(one_contact):
 
 def bye_mess():  # 6 in menu
     print('Работа завершена!')
-
-
-def done_message():
-    print('Выполнено!')
 
 
 def import_contacts(import_list):

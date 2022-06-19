@@ -117,7 +117,7 @@ if __name__ == "__main__":
         text = json.load(test_file)
         pprint(text, sort_dicts=False)
 
-    print(' ')
+    print('')
     print('***change_contact(test_contact_edit)***')
     test_contact_edit = {'contact_id': 3, 'surname': 'Сидоров', 'name': 'Сидор', 'phone': '333', 'comment': 'Должен 7777000'}
     change_contact(test_contact_edit)

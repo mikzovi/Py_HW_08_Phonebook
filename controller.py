@@ -46,6 +46,10 @@ def run():
             case '5': # Выход
                 interface.bye_mess() # прошу дописать функцию bye в interface (прощание с юзером)
                 break
+
+            case '7': # экспорт
+                interface.export_contacts() # 
+                break
             
             case _:
                 interface.error_input() # прошу дописать функцию error_input в interface, которая выведет сообщение что-то вроде "Введены некорректные данные"

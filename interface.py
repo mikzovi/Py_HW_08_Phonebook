@@ -1,5 +1,6 @@
 import time
 from import_from_file import choice_format
+from export_to_file import export_csv
 
 main_menu = \
     'Выберите пункт меню:\n\
@@ -98,4 +99,5 @@ def import_contacts(import_list):
     return
 
 def export_contacts():
+    export_csv()
     return

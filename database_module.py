@@ -2,7 +2,7 @@
 
 import json
 
-path_to_db = 'db_phonebook.json'
+path_to_db = 'test_db_phonebook.json'
 
 def get_all_contacts():  # Возвращает весь список контактов из файла db_phonebook.json
     with open(path_to_db, 'r', encoding='UTF-8') as file:
@@ -24,7 +24,7 @@ def get_contact_info(contact_info_get): # Возвращает контакты 
     with open(path_to_db, 'r', encoding='UTF-8') as file: # Читаем данные из базы. 
         data = json.load(file)
         info_contact_get = []
-        for i in range(0, len(data)): 
+        for i in range(0, len(data)):
             if  data[i]['surname'] == contact_info_get:
                 info_contact_get.append(data[i])
             elif data[i]['name'] == contact_info_get:

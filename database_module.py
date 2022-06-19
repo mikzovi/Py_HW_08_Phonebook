@@ -38,10 +38,9 @@ def get_contact_info(contact_info_get): # Возвращает контакты 
 def add_contacts(contacts_new_dict):  # Добавление новых контактов в БД [{'contact_id': '', 'surname': 'Петров', 'name': 'Иван', 'phone': '111', 'comment': 'Друг'}, 
                                                                         #{'contact_id': '', 'surname': 'Васильков', 'name': 'Иван', 'phone': '111', 'comment': 'Друг'}]
     with open(path_to_db, 'r', encoding='UTF-8') as file: # Читаем данные из базы. 
-        data = json.load(file)
-        #data[0]['id_counter'] +=1 # Увеличиваем id_counter на 1.               
+        data = json.load(file)            
         for i in range(0, len(contacts_new_dict)): 
-            contacts_new_dict[i]['contact_id'] = data[len(data)-1]['contact_id'] +1
+            contacts_new_dict[i]['contact_id'] = data[len(data)-1]['contact_id'] + 1
             data.append(contacts_new_dict[i])     # Добавляем в список словарей новый контакт   
     with open(path_to_db, 'w', encoding='UTF-8') as file: # Записываем в базу данных обновленный список словарей
         json.dump(data, file, indent=4)

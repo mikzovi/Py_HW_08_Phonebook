@@ -8,3 +8,4 @@
 {'contact_id': 4, 'surname': 'Ромашкина', 'name': 'Маша', 'phone': '444', 'comment': 'Вкусные пирожки'}; changed; 2022-06-19 21:26:22 
 {'contact_id': 4, 'surname': 'Ромашкина', 'name': 'Маша', 'phone': '4444', 'comment': 'Вкусные пирожки'}; changed; 2022-06-19 21:27:03 
 {'contact_id': 4, 'surname': 'Ромашкина', 'name': 'Маша', 'phone': '444446', 'comment': 'Вкусные пирожки'}; changed; 2022-06-19 21:32:47 
+{'contact_id': 7, 'surname': 'Федоров', 'name': 'Кирилл', 'phone': '5667347', 'comment': 'Студент GB'}; changed; 2022-06-19 23:20:59 

@@ -7,10 +7,10 @@ test_imported_data = [{'contact_id': '' ,'surname': 'Иванов', 'name': 'И�
                     {'contact_id': '' ,'surname': 'Василькова', 'name': 'Оля', 'phone': '555', 'comment': 'Большие глаза'}]
 
 
-def import_csv_to_json(file_csv):
+def import_csv_to_json(file_csv): # нужно передать имя файла из которрого надо взять данные
 
     data_json = [] #сюда загоним список словарей который получип при преобразовании
-    temp = []
+    temp = [] 
      
     with open(file_csv,"r", newline="" ,encoding='UTF-8') as file: 
         reader_temp = csv.reader(file) 
@@ -20,7 +20,7 @@ def import_csv_to_json(file_csv):
     colone = list(temp.pop(0)) # мне нужен список ключей словаря. не нашла функцию для этого ['contact_id','surname', 'name', 'phone', 'comment'] 
     
     for element in temp:
-        data_json.append(dict(zip(colone, element)))
+        data_json.append(dict(zip(colone, element))) # собираем в список словарей
     
     return data_json    # получили данные в формате списка словарей. осталось записать его в файл
 

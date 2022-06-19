@@ -20,7 +20,7 @@ def get_one_contact(contact_id_get): # Возвращает один конта�
                 break
     return one_contact_get
 
-def get_contact_info(contact_info_get): # Возвращает список дел по значению любого из ключей surname, name, phone, comment
+def get_contact_info(contact_info_get): # Возвращает контакты по значению любого из ключей surname, name, phone, comment
     with open(path_to_db, 'r', encoding='UTF-8') as file: # Читаем данные из базы. 
         data = json.load(file)
         info_contact_get = []
@@ -46,7 +46,7 @@ def add_contacts(contacts_new_dict):  # Добавление новых конт
     with open(path_to_db, 'w', encoding='UTF-8') as file: # Записываем в базу данных обновленный список словарей
         json.dump(data, file, indent=4)
 
-def change_contact(contact_edit):  # Изменение дела 
+def change_contact(contact_edit):  # Изменение контакта
     with open(path_to_db, 'r', encoding='UTF-8') as file: # Читаем данные из базы. 
         data = json.load(file)
 
@@ -67,7 +67,7 @@ def delete_contact(contact_id_delete): # Удаление контакта в Б
                 break
         data.pop(index_del)   # Удаляем из списка словарь с нужным contact_id
         for i in range(0, len(data)): # Перезаписаваем в каждом словаре списка ключ contact_id
-            data[i]['contact_id'] = i
+            data[i]['contact_id'] = i+1
     with open(path_to_db, 'w', encoding='UTF-8') as file: # Записываем в базу данных обновленный список словарей
         json.dump(data, file, indent=4)    
 
@@ -118,8 +118,8 @@ if __name__ == "__main__":
         pprint(text, sort_dicts=False)
 
     print('')
-    print('***change_deal(test_deal_edit)***')
-    test_contact_edit = {'contact_id': '', 'surname': 'Петров', 'name': 'Иван', 'phone': '111', 'comment': 'Друг'}
+    print('***change_contact(test_contact_edit)***')
+    test_contact_edit = {'contact_id': 3, 'surname': 'Сидоров', 'name': 'Сидор', 'phone': '333', 'comment': 'Должен 7777000'}
     change_contact(test_contact_edit)
     with open (path_to_db, 'r') as test_file:
         text = json.load(test_file)

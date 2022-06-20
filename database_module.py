@@ -20,19 +20,21 @@ def get_one_contact(contact_id_get): # Возвращает один конта�
                 break
     return one_contact_get
 
-def get_contact_info(contact_info_get): # Возвращает контакты по значению любого из ключей surname, name, phone, comment
+def get_contact_info(contact_info_get): # Возвращает контакты по вхождению в значение любого из ключей surname, name, phone, comment
     with open(path_to_db, 'r', encoding='UTF-8') as file: # Читаем данные из базы. 
         data = json.load(file)
         info_contact_get = []
+
         for i in range(0, len(data)): 
-            if  data[i]['surname'] == contact_info_get:
+            if  contact_info_get.lower() in data[i]['surname'].lower():
                 info_contact_get.append(data[i])
-            elif data[i]['name'] == contact_info_get:
+            elif contact_info_get.lower() in data[i]['name'].lower():
                 info_contact_get.append(data[i])
-            elif data[i]['phone'] == contact_info_get:
+            elif contact_info_get.lower() in data[i]['phone'].lower():
                 info_contact_get.append(data[i])
-            elif data[i]['comment'] == contact_info_get:
-                info_contact_get.append(data[i])    
+            elif contact_info_get.lower() in data[i]['comment'].lower():
+                info_contact_get.append(data[i])
+ 
     return info_contact_get
 
 def add_contacts(contacts_new_dict):  # Добавление новых контактов в БД [{'contact_id': '', 'surname': 'Петров', 'name': 'Иван', 'phone': '111', 'comment': 'Друг'}, 
@@ -88,14 +90,6 @@ if __name__ == "__main__":
                 {'contact_id': 4, 'surname': 'Ромашкина', 'name': 'Маша', 'phone': '444', 'comment': 'Вкусные пирожки'},
                 {'contact_id': 5, 'surname': 'Василькова', 'name': 'Оля', 'phone': '555', 'comment': 'Большие глаза'}]
     
-    
-    # [{"id_counter": 5}, 
-    #         {'deal_id': 1, 'deal': 'Помыть кота', 'deadline': '12.05.2022', 'status': 'выполнено'}, 
-    #         {'deal_id': 2, 'deal': 'Постирать', 'deadline': '12.07.2022', 'status': 'просрочено'},
-    #         {'deal_id': 3, 'deal': 'Лохматить бабушку', 'deadline': '20.07.2022', 'status': 'в работе'},
-    #         {'deal_id': 4, 'deal': 'Написать To-do list', 'deadline': '16.07.2022', 'status': 'не выполнено'},
-    #         {'deal_id': 5, 'deal': 'Съесть кактус', 'deadline': '', 'status': 'делать не буду'}]
-
 
     with open (path_to_db, 'w') as test_file:
         json.dump(test_data,test_file, indent=4)
@@ -143,7 +137,7 @@ if __name__ == "__main__":
     print('')
     print('***get_contact_info(contact_info_get)***')
     print('***')
-    contact_info_get = 'Иван'
+    contact_info_get = 'ван'
     print(contact_info_get)
     print('***')
     pprint(get_contact_info(contact_info_get), sort_dicts=False)

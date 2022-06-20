@@ -1,5 +1,5 @@
 import time
-from import_from_file import choice_format
+# from import_from_file import choice_format
 import art
 from art import *  # библиотека для работы с ascii артом
 
@@ -11,7 +11,7 @@ def error_input():
 
 
 def done_message():
-    print('\033[5;32mВыполнено!' + art("cat2"))
+    print('\033[5;32mВыполнено!' + art("cat4"))
 
 
 main_menu = \
@@ -121,12 +121,28 @@ def bye_mess():  # 6 in menu
     print('Работа завершена!')
 
 
-def import_contacts(import_list):
+def import_contacts():
     print('\033[4mИмпорт контактов:\033[0m')
-    choice_format()
-    return
+    print('Пожалуйста выберите формат файла для импорта:')
+    import_type = input('csv\n json\n ')
+    print('Пожалуйста введите имя файла для импорта:')
+    import_name = input()
+    import_data = [import_type, import_name]
+    return import_data
 
 
 def export_contacts():
-    print('\033[4mИмпорт контактов:\033[0m')
-    return
+    print('\033[4mЭкспорт контактов:\033[0m')
+    print('Пожалуйста выберите формат файла для экпорта:')
+    export_type = input('csv\n json\n')
+    print('Пожалуйста введите имя файла для экспорта:')
+    export_name = input()
+    export_data = [export_type, export_name]
+    return export_data
+
+
+def result_mess(done):
+    if done:
+        done_message()
+    else:
+        print('\033[5;31mПроизошла ошибка при выполнении операции!' + art("error"))

@@ -1,6 +1,6 @@
 import csv
 import json
-from collections import OrderedDict
+#from collections import OrderedDict
 
 
 path_to_import_json_file = 'import_phonebook.json'

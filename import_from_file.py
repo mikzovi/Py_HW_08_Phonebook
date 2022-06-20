@@ -1,47 +1,22 @@
-test_imported_data = [{'contact_id': '' ,'surname': 'Иванов', 'name': 'Иван', 'phone': '111', 'comment': 'Друг'}, 
-                    {'contact_id': '' ,'contact_id': '', 'surname': 'Петров', 'name': 'Петр', 'phone': '222', 'comment': 'Коллега'},
-                    {'contact_id': '' ,'surname': 'Сидоров', 'name': 'Сидор', 'phone': '333', 'comment': 'Должен 1000'},
-                    {'contact_id': '' ,'surname': 'Ромашкина', 'name': 'Маша', 'phone': '444', 'comment': 'Вкусные пирожки'},
-                    {'contact_id': '' ,'surname': 'Василькова', 'name': 'Оля', 'phone': '555', 'comment': 'Большие глаза'}]
+import csv
+# считывает данные из файла в формате csv и создает список словарей для дальнейшей работы с ним.
 
-def import_txt():
-    #path_to_file = 'phonebook.txt'
+def import_csv_to_json(file_csv): # нужно передать имя файла из которрого надо взять данные
+
+    data_json = [] #сюда загоним список словарей который получип при преобразовании
+    temp = [] 
+     
+    with open(file_csv,"r", newline="" ,encoding='UTF-8') as file: 
+        reader_temp = csv.reader(file) 
+        for row in reader_temp:
+            temp.append(row)
+        
+    colone = list(temp.pop(0)) # список ключей словаря. 
     
-    return test_imported_data
-
-
-def import_csv():
-    # import csv
-    # path_to_file = 'phonebook.csv'
-    # results = []
-    # with open (path_to_file) as csvfile:                           
-    #     # Создаем объект reader, указываем символ-разделитель ";"
-    #     file_reader = csv.reader(csvfile, delimiter= ";")
-    #     for row in file_reader:
-    #         results.append(row) # Каждую строку из phoneной книги добавляем в список результатов
-    return test_imported_data
-
-def import_json():
-    # path_to_file = 'phonebook.json'
-    return test_imported_data
-
-# Выбираем формат файла phoneной книги
-def choice_format():
-    print('Телефонную книгу в каком формате изволите импотировать? \n.txt - 1 .csv - 2 .json - 3:')
-    choice = int((input()))
-    match choice:
-        case 1: return import_txt()
-        case 2: return import_csv()
-        case 3: return import_json()
-        case _ :
-            print('Неизвестный формат файла')
-            exit()
-
-
-if __name__ == "__main__":
-    from pprint import pprint
-    pprint(choice_format(), sort_dicts=False)
+    for element in temp:
+        data_json.append(dict(zip(colone, element))) # собираем в список словарей
     
+    print(data_json)
 
-  
+    return data_json    # получили данные в формате списка словарей. осталось добавить эти строки в базу
 

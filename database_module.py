@@ -137,7 +137,7 @@ if __name__ == "__main__":
     print('')
     print('***get_contact_info(contact_info_get)***')
     print('***')
-    contact_info_get = 'ван'
+    contact_info_get = 'дол'
     print(contact_info_get)
     print('***')
     pprint(get_contact_info(contact_info_get), sort_dicts=False)

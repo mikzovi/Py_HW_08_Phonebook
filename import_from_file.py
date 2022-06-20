@@ -1,5 +1,11 @@
+import csv
+import json
+
+path_to_import_json_file = 'import_phonebook.json'
+path_to_import_csv_file = 'import_phonebook.csv'
+
 test_imported_data = [{'contact_id': '' ,'surname': 'Иванов', 'name': 'Иван', 'phone': '111', 'comment': 'Друг'}, 
-                    {'contact_id': '' ,'contact_id': '', 'surname': 'Петров', 'name': 'Петр', 'phone': '222', 'comment': 'Коллега'},
+                    {'contact_id': '' ,'surname': 'Петров', 'name': 'Петр', 'phone': '222', 'comment': 'Коллега'},
                     {'contact_id': '' ,'surname': 'Сидоров', 'name': 'Сидор', 'phone': '333', 'comment': 'Должен 1000'},
                     {'contact_id': '' ,'surname': 'Ромашкина', 'name': 'Маша', 'phone': '444', 'comment': 'Вкусные пирожки'},
                     {'contact_id': '' ,'surname': 'Василькова', 'name': 'Оля', 'phone': '555', 'comment': 'Большие глаза'}]
@@ -21,7 +27,8 @@ def import_csv():
     #         results.append(row) # Каждую строку из phoneной книги добавляем в список результатов
     return test_imported_data
 
-def import_json():
+def import_json(path_to_import_json_file):
+    
     # path_to_file = 'phonebook.json'
     return test_imported_data
 

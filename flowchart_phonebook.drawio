@@ -1,0 +1,141 @@
+<mxfile host="65bd71144e">
+    <diagram id="Y0g7qM-dOtGkc-WGfHgg" name="Page-1">
+        <mxGraphModel dx="882" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-34" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="467" y="330" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="412" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-47" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.855;entryY=0;entryDx=0;entryDy=4.35;entryPerimeter=0;" parent="1" source="2" target="36" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="572" y="710" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="565" y="720"/>
+                            <mxPoint x="579" y="720"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;elbow=vertical;" edge="1" parent="1" source="2" target="40">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="650" y="622"/>
+                            <mxPoint x="650" y="730"/>
+                            <mxPoint x="742" y="730"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="controller.py" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="467" y="479" width="130" height="191" as="geometry"/>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="22">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="360" y="575"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="interface.py" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="472" y="290" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Запуск программы" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="542" y="200" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="oIdS2dxiCFurpOh3gipV-22" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-22" value="Main.py" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="472" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-24" value="Точка входа/запуск приложения" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="462" y="80" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-28" value="Графическое отображение в консоли, общение с пользователем(получение комманд, вывод результата)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="632" y="287.5" width="180" height="62.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-37" value="&lt;span style=&quot;&quot;&gt;Получение команды от пользователя&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="532" y="370" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-38" value="&lt;span style=&quot;&quot;&gt;Возвращение результата&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="402" y="390" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-41" value="Модуль взаимодействия между интерфейсом, базой данных и модулем логгирования&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="429" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-42" value="Модуль логгирования всех действий со списком контактов" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="842" y="771" width="160" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-46" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.145;exitY=0;exitDx=0;exitDy=4.35;exitPerimeter=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="36" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="486" y="680" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="486" y="720"/>
+                            <mxPoint x="500" y="720"/>
+                            <mxPoint x="500" y="680"/>
+                        </Array>
+                        <mxPoint x="485.9949999999999" y="659.3499999999999" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="oIdS2dxiCFurpOh3gipV-56" value="Сохранение&amp;nbsp; журнала действий со списком контактов" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="652" y="680" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=elbowEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="22" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="import_from_file.py" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="593" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=elbowEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="23" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="export_to_file.py" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="812" y="545" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="23">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="482" y="315" as="sourcePoint"/>
+                        <mxPoint x="102" y="420" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="740" y="527"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="Данные для экспорта в файл" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="760" y="490" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="Импортировать контакты из файла" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="540" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="Файл с экспортированными контактами" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="690" y="575" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Импортированные данные" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="630" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="db.py" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="467" y="864" width="131" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="База данных для хранения списка контактов" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="472.5" y="954" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Сохранение списка контактов" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="582" y="799" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="logger.py" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="712" y="769" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Получение сохраненного списка контактов" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="402" y="779" width="80" height="90" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

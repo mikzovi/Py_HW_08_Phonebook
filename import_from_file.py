@@ -2,10 +2,6 @@ import csv
 import json
 #from collections import OrderedDict
 
-
-path_to_import_json_file = 'import_phonebook.json'
-path_to_import_csv_file = 'import_phonebook.csv'
-
 # test_imported_data = [{'contact_id': '' ,'surname': 'Иванов', 'name': 'Иван', 'phone': '111', 'comment': 'Друг'}, 
 #                     {'contact_id': '' ,'surname': 'Петров', 'name': 'Петр', 'phone': '222', 'comment': 'Коллега'},
 #                     {'contact_id': '' ,'surname': 'Сидоров', 'name': 'Сидор', 'phone': '333', 'comment': 'Должен 1000'},
@@ -47,11 +43,14 @@ def import_json(path_to_import_json_file):
 
 if __name__ == "__main__":
     from pprint import pprint
+    path_to_import_json_file = 'import_phonebook.json'
+    path_to_import_csv_file = 'import_phonebook.csv'
     #pprint(choice_format(), sort_dicts=False)
     # pprint('******************test_imported_data******************')
     # pprint(test_imported_data, sort_dicts=False)
     pprint('******************csv_file******************')
     pprint(import_csv(path_to_import_csv_file), sort_dicts=False)
+    
     pprint('******************json_file******************')
     pprint(import_json(path_to_import_json_file), sort_dicts=False)
 

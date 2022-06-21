@@ -9,7 +9,7 @@
 **Фомина Екатерина**
 - *export.py*
 
-**Золотарев Михаил**
+**Золотарев  Михаил**
 - *import_from_file.py*
 - *foowchart_phonebook.py*
 

@@ -1,7 +1,8 @@
 import interface
 import database_module
 import logger
-
+import import_from_file as iff
+import export_to_file
 
 
 def run():
@@ -42,11 +43,36 @@ def run():
                     logger.add(changed_contact, 'changed')
             
             case '5': # Импорт
-                print('Функционал в процессе разработки')
-            
+                user_choice = interface.export_contacts()[0]
+                if user_choice == 'csv':
+                    data = iff.import_csv('import_phonebook.csv')
+                    database_module.add_contacts(data)
+                    interface.result_mess(True)
+                    logger.add(data, 'imported')
+                elif user_choice == 'json':
+                    data = iff.import_csv('import_phonebook.json')
+                    database_module.add_contacts(data)
+                    interface.result_mess(True)
+                    logger.add(data, 'imported')
+                else:
+                    interface.error_input()
+                
+                
             
             case '6': # Экспорт
-                print('Функционал в процессе разработки')
+                user_choice = interface.import_contacts()[0]
+                if user_choice == 'csv':
+                    data = export_to_file.export_csv()
+
+                    interface.result_mess(True)
+                    #logger.add(data, 'exported')
+                elif user_choice == 'json':
+                    #data = export_to_file.export_json()
+                    
+                    interface.result_mess(False)
+                    #logger.add(data, 'exported')
+                else:
+                    interface.error_input()
 
             case '7': # Выход
                 interface.bye_mess()

@@ -43,7 +43,7 @@ def run():
                     logger.add(changed_contact, 'changed')
             
             case '5': # Импорт
-                user_choice = interface.export_contacts()[0]
+                user_choice = interface.import_contacts()[0]
                 if user_choice == 'csv':
                     data = iff.import_csv('import_phonebook.csv')
                     database_module.add_contacts(data)
@@ -60,7 +60,7 @@ def run():
                 
             
             case '6': # Экспорт
-                user_choice = interface.import_contacts()[0]
+                user_choice = interface.export_contacts()[0]
                 if user_choice == 'csv':
                     data = export_to_file.export_csv()
 

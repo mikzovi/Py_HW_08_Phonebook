@@ -50,7 +50,7 @@ def run():
                     interface.result_mess(True)
                     logger.add(data, 'imported')
                 elif user_choice == 'json':
-                    data = iff.import_csv('import_phonebook.json')
+                    data = iff.import_json('import_phonebook.json')
                     database_module.add_contacts(data)
                     interface.result_mess(True)
                     logger.add(data, 'imported')

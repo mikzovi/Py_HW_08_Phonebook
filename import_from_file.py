@@ -1,6 +1,5 @@
 import csv
 import json
-#from collections import OrderedDict
 
 # test_imported_data = [{'contact_id': '' ,'surname': 'Иванов', 'name': 'Иван', 'phone': '111', 'comment': 'Друг'}, 
 #                     {'contact_id': '' ,'surname': 'Петров', 'name': 'Петр', 'phone': '222', 'comment': 'Коллега'},
@@ -13,19 +12,24 @@ def import_csv(path_to_import_csv_file):
     with open(path_to_import_csv_file, "r", newline='', encoding='UTF-8-sig') as file: 
         file_reader = csv.DictReader(file, delimiter = ";") 
         for row in file_reader:
-            row['contact_id'] = '' # Добавляем пустой ключ contact_id в словарь
-            data.append(row)            
-    return data 
+            #row['contact_id'] = '' # Добавляем пустой ключ contact_id в словарь
+            data.append(row)     
+        for i in range(0, len(data)): 
+            d1 = {'contact_id': ''}
+            data[i], d1 = d1, data[i]
+            data[i].update(d1)     
 
+    return data 
+    
 def import_json(path_to_import_json_file):
-    with open(path_to_import_json_file, 'r', encoding='UTF-8-sig') as file: #открываем файл на чтение
+    data = [] # список словарей который получим при преобразовании      
+    with open(path_to_import_json_file, 'r', encoding='UTF-8') as file: #открываем файл на чтение
         data = json.load(file) #загружаем из файла данные в словарь data
         for i in range(0, len(data)): 
-            data[i]['contact_id'] = '' # Добавляем пустой ключ contact_id в словарь
-            # ordered_dict = OrderedDict(data[i])
-            # ordered_dict['contact_id'] = ''
-            # ordered_dict.move_to_end('contact_id', False)
-            # data[i] = ordered_dict 
+            for i in range(0, len(data)): 
+                d1 = {'contact_id': ''}
+                data[i], d1 = d1, data[i]
+                data[i].update(d1)
     return data
 
 

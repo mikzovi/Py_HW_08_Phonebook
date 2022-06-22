@@ -60,19 +60,20 @@ def run():
                 
             
             case '6': # Экспорт
-                user_choice = interface.export_contacts()
-                if user_choice == 'csv':
-                    data = export_to_file.export_csv()
+                export_to_file.export_csv()
+                # user_choice = interface.export_contacts()
+                # if user_choice == 'csv':
+                #     data = export_to_file.export_csv()
 
-                    interface.result_mess(True)
-                    #logger.add(data, 'exported')
-                elif user_choice == 'json':
-                    #data = export_to_file.export_json()
+                #     interface.result_mess(True)
+                #     #logger.add(data, 'exported')
+                # elif user_choice == 'json':
+                #     #data = export_to_file.export_json()
                     
-                    interface.result_mess(False)
-                    #logger.add(data, 'exported')
-                else:
-                    interface.error_input()
+                #     interface.result_mess(False)
+                #     #logger.add(data, 'exported')
+                # else:
+                #     interface.error_input()
 
             case '7': # Выход
                 interface.bye_mess()

@@ -26,10 +26,9 @@ def import_json(path_to_import_json_file):
     with open(path_to_import_json_file, 'r', encoding='UTF-8') as file: #открываем файл на чтение
         data = json.load(file) #загружаем из файла данные в словарь data
         for i in range(0, len(data)): 
-            for i in range(0, len(data)): 
-                d1 = {'contact_id': ''}
-                data[i], d1 = d1, data[i]
-                data[i].update(d1)
+            d1 = {'contact_id': ''}
+            data[i], d1 = d1, data[i]
+            data[i].update(d1)
     return data
 
 
